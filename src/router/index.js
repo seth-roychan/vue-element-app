@@ -83,7 +83,7 @@ export const constantRoutes = [
       }
     ]
   },
-  {
+/*   {
     path: '/documentation',
     component: Layout,
     children: [
@@ -94,8 +94,8 @@ export const constantRoutes = [
         meta: { title: 'Documentation', icon: 'documentation', affix: true }
       }
     ]
-  },
-  {
+  }, */
+/*   {
     path: '/guide',
     component: Layout,
     redirect: '/guide/index',
@@ -107,7 +107,7 @@ export const constantRoutes = [
         meta: { title: 'Guide', icon: 'guide', noCache: true }
       }
     ]
-  },
+  }, */
   {
     path: '/profile',
     component: Layout,
@@ -129,7 +129,7 @@ export const constantRoutes = [
  * the routes that need to be dynamically loaded based on user roles
  */
 export const asyncRoutes = [
-  {
+  /* {
     path: '/permission',
     component: Layout,
     redirect: '/permission/page',
@@ -169,7 +169,7 @@ export const asyncRoutes = [
         }
       }
     ]
-  },
+  }, */
 
   {
     path: '/icon',
@@ -222,7 +222,7 @@ export const asyncRoutes = [
     ]
   },
 
-  {
+/*   {
     path: '/tab',
     component: Layout,
     children: [
@@ -233,7 +233,7 @@ export const asyncRoutes = [
         meta: { title: 'Tab', icon: 'tab' }
       }
     ]
-  },
+  }, */
 
   {
     path: '/error',
@@ -273,7 +273,7 @@ export const asyncRoutes = [
     ]
   },
 
-  {
+/*   {
     path: '/excel',
     component: Layout,
     redirect: '/excel/export-excel',
@@ -308,9 +308,9 @@ export const asyncRoutes = [
         meta: { title: 'Upload Excel' }
       }
     ]
-  },
+  }, */
 
-  {
+/*   {
     path: '/zip',
     component: Layout,
     redirect: '/zip/download',
@@ -325,8 +325,8 @@ export const asyncRoutes = [
         meta: { title: 'Export Zip' }
       }
     ]
-  },
-
+  }, */
+/* 
   {
     path: '/pdf',
     component: Layout,
@@ -339,12 +339,12 @@ export const asyncRoutes = [
         meta: { title: 'PDF', icon: 'pdf' }
       }
     ]
-  },
-  {
+  }, */
+/*   {
     path: '/pdf/download',
     component: () => import('@/views/pdf/download'),
     hidden: true
-  },
+  }, */
 
   {
     path: '/theme',
@@ -372,7 +372,7 @@ export const asyncRoutes = [
     ]
   }, */
 
-  {
+/*   {
     path: 'external-link',
     component: Layout,
     children: [
@@ -381,7 +381,7 @@ export const asyncRoutes = [
         meta: { title: 'External Link', icon: 'link' }
       }
     ]
-  },
+  }, */
 
   // 404 page must be placed at the end !!!
   { path: '*', redirect: '/404', hidden: true }
